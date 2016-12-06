@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: sc-monitoring
+  cloud:
+    config:
+      uri: http://sc-server-config:8100
+      fail-fast: true
