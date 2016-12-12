@@ -1,6 +1,16 @@
 spring:
   application:
     name: sc-monitoring
+---
+spring:
+  profiles: default
+  cloud:
+    config:
+      uri: http://localhost:8100
+      fail-fast: true
+---
+spring:
+  profiles: docker
   cloud:
     config:
       uri: http://sc-server-config:8100
